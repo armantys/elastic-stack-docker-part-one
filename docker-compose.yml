@@ -1,5 +1,3 @@
-version: "3.8"
-
 volumes:
   certs:
     driver: local
@@ -17,7 +15,7 @@ volumes:
 networks:
   default:
     name: elastic
-    external: false
+    external: true
 
 services:
   setup:
